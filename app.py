@@ -77,22 +77,22 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("predict new customer will leave the bank or NOT usnig  K Means Algorithm ")
-    CreditScore = st.number_input('Enter  Cradit Score',300,1000)
+    st.header("Predict new customer will leave the bank or not using KNN Classifier ")
+    CreditScore = st.number_input('Enter  Credit Score',300,1000)
     Geography = st.number_input('Insert Geography 0 for france and 1 for spain',0,1)
     Gender = st.number_input('Insert gender 0 for male and 1 for female',0,1)
     Age = st.number_input('Insert a Age',18,80)
     Tenure = st.number_input('Insert a Tanure',0,9)
     Balance = st.number_input('Enter your account balance')
-    HasCrCard= st.number_input('inster hasCard or not 1 for yes 0 for no ',0,1)
+    HasCrCard= st.number_input('Insert hasCard or not 1 for yes 0 for no ',0,1)
     IsActiveMember= st.number_input('Insert a member is active or not 1 for yes 0 for no',0,1)
-    EstimatedSalary  = st.number_input('Enter stimated sallery ',0,10000000)
+    EstimatedSalary  = st.number_input('Enter estimated salary ',0,10000000)
    
     
     resul=""
     if st.button("Predict"):
       result=predict_note_authentication(CreditScore,Geography,Gender,Age,Tenure,Balance,HasCrCard,IsActiveMember,EstimatedSalary)
-      st.success('K Means Algorithm Model has predicted {}'.format(result))
+      st.success('KNN Classifier has predicted {}'.format(result))
     if st.button("About"):
       st.subheader("Developed by Mohit Taimni ")
       st.subheader("B-Section,PIET")
