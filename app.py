@@ -71,7 +71,7 @@ def main():
    <div class="col-md-12">
    <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
    <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-   <center><p style="font-size:20px;color:white;margin-top:10px;">RTU Final pactice by piet18cs116</p></center> 
+   <center><p style="font-size:20px;color:white;margin-top:10px;">Final practice by Mohit Taimni</p></center> 
    </div>
    </div>
    </div>
@@ -94,8 +94,8 @@ def main():
       result=predict_note_authentication(CreditScore,Geography,Gender,Age,Tenure,Balance,HasCrCard,IsActiveMember,EstimatedSalary)
       st.success('K Means Algorithm Model has predicted {}'.format(result))
     if st.button("About"):
-      st.subheader("Developed by Rahul kumar agrawal RTU Final Exam ")
-      st.subheader("C-Section,PIET")
+      st.subheader("Developed by Mohit Taimni ")
+      st.subheader("B-Section,PIET")
 
 
 
